@@ -19,7 +19,7 @@ int main()
  
   cout << "enter speed in KPH: " ;
   cin >> kph; //enter kph
-  cout << "pace in MPH is: " << ConvertToMPH (kph) << endl; //cout kph to mph
+  cout << "pace in MPH is: " << ConvertToMPH (kph) << endl; //cout kph to mph (pace)
  
      return 0;
 }
@@ -29,7 +29,7 @@ double ConvertToMPH(int paceInMin, int paceInSec) //pace conversions
     return 60/(paceInMin + paceInSec/60.);
 }
  
-double ConvertToMPH(double kph) //MPH to Kph conversion
+double ConvertToMPH(double kph) //kph to mph conversion
 {
     return kph/1.61;
 }
